@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/splaza28/CryptoWorld/issues"
   },
-  "homepage": "https://github.com/splaza28/CryptoWorld#readme"
+  "homepage": "https://github.com/splaza28/CryptoWorld#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
