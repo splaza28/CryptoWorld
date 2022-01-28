@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/splaza28/CryptoWorld#readme",
   "dependencies": {
+    "dotenv": "^14.3.2",
     "express": "^4.17.2",
     "express-handlebars": "^6.0.2",
     "hbs": "^4.2.0",
