@@ -1,4 +1,4 @@
-{{!-- <html lang="en">
+<html lang="en">
 
   <head>
     <meta charset="UTF-8" />
@@ -15,11 +15,10 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <title>Register</title>
+    <title>SignIn</title>
   </head>
 
   <body>
-
     <div class="container">
       <div
         class="row d-flex justify-content-center align-items-center"
@@ -42,21 +41,9 @@
             </div>
           {{/if}}
 
-          <h1>Register</h1>
+          <h1>Login</h1>
 
-          <form action="/register" method="post">
-            <div class="form-group">
-              <label class="py-2">Full name</label>
-              <input
-                type="text"
-                required
-                name="fullname"
-                class="form-control"
-                placeholder="Full name"
-              />
-            </div>
-            <br />
-
+          <form action="/" method="post">
             <div class="form-group">
               <label class="py-2">Email address</label>
               <input
@@ -83,11 +70,11 @@
               style="width: 100%;"
               type="submit"
               class="btn btn-primary"
-            >Register</button>
+            >Login</button>
 
             <div class="text-center py-3">
-              <p>Already register?</p>
-              <a href="/">Login</a>
+              <p>Not signed up yet?</p>
+              <a href="/register">Register</a>
             </div>
           </form>
         </div>
@@ -95,4 +82,4 @@
     </div>
   </body>
 
-</html> --}}
+</html>
