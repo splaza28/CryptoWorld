@@ -1,8 +1,8 @@
 const express = require("express");
-const router = express.Router();
-const bcrypt = require("bcrypt");
-// const Userdata = require("../models/user");
-// const Comment = require("../models/comment");
+var router = express.Router();
+const bcrypt = require("bcryptjs");
+const Userdata = require("../models/user");
+const Comment = require("../models/comment");
 
 
 
