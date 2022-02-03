@@ -1,14 +1,14 @@
 const express = require('express');
 const flash = require('connect-flash');
 const session = require('express-session');
-const env = require('dotenv');
+//const env = require('dotenv');
 const path = require('path');
 var cookieParser = require('cookie-parser');
 
 const app = express();
 
 //Env veriable
-env.config();
+//env.config();
 
 const static_path = path.join(__dirname, "./public");
 app.use(express.static(static_path));
