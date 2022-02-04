@@ -4,6 +4,7 @@ const session = require('express-session');
 const env = require('dotenv');
 const path = require('path');
 var cookieParser = require('cookie-parser');
+const sequelize = require("./config/connection");
 
 const app = express();
 
@@ -58,4 +59,6 @@ app.use(require("./routes/users.js"));
 
 const PORT = process.env.PORT || 3002;
 
-app.listen(PORT, console.log(`Server running on  ${PORT}`));
+sequelize.sync({ force: false }).then(() => {
+	app.listen(PORT, () => console.log(`Now Listening ${PORT}!`));
+});
